@@ -2,5 +2,13 @@
 <!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
+	<bean id="helloMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/test.do">HelloWorld</prop>
+			</props>
+		</property>
+	</bean>
 	<bean id="HelloWorld" class="springWebApp.HelloWorld"></bean>
 </beans>
